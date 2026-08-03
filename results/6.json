@@ -1,0 +1,24 @@
+{
+  "test_id": "6",
+  "full_name": "usekaneo/kaneo",
+  "strategy_used": "compose",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "compose_up",
+      "ok": false,
+      "seconds": 3
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone usekaneo/kaneo\nCloning into '/home/runner/work/_temp/target'...\ncommit=0efc06f9956646be98f3b6c018764459626a5dab\n==> strategy compose (compose.yml)\nenv file /home/runner/work/_temp/target/.env not found: stat /home/runner/work/_temp/target/.env: no such file or directory",
+  "commit_sha": "0efc06f9956646be98f3b6c018764459626a5dab",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30821069753",
+  "finished_at": "2026-08-03T14:06:12Z"
+}

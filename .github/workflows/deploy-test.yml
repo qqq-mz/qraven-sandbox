@@ -24,9 +24,9 @@ on:
         default: "false"
         type: string
 
+# 默认只读；写权限仅授予 commit-result job（防止被测代码窃取 token）
 permissions:
-  contents: write
-  actions: write
+  contents: read
 
 concurrency:
   group: deploy-test-${{ github.event.client_payload.test_id || inputs.test_id }}
@@ -37,12 +37,17 @@ jobs:
   run-test:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      contents: read
     outputs:
       test_id: ${{ steps.meta.outputs.test_id }}
       full_name: ${{ steps.meta.outputs.full_name }}
     steps:
       - name: Checkout sandbox scripts
         uses: actions/checkout@v4
+        with:
+          # 不落盘凭据：本 job 会执行不可信的被测代码
+          persist-credentials: false
 
       - name: Resolve payload
         id: meta
@@ -144,6 +149,8 @@ jobs:
     if: always() && needs.run-test.result != 'cancelled'
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
       - name: Checkout sandbox repo
         uses: actions/checkout@v4

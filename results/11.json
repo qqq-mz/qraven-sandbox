@@ -1,0 +1,24 @@
+{
+  "test_id": "11",
+  "full_name": "donnemartin/system-design-primer",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone donnemartin/system-design-primer\nCloning into '/home/runner/work/_temp/target'...\ncommit=ae9bbd7b02d90b9866215de185217d33f39ab733\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "ae9bbd7b02d90b9866215de185217d33f39ab733",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30821911632",
+  "finished_at": "2026-08-03T14:16:37Z"
+}

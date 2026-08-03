@@ -1,0 +1,29 @@
+{
+  "test_id": "8",
+  "full_name": "donnemartin/system-design-primer",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone donnemartin/system-design-primer\nCloning into '/home/runner/work/_temp/target'...\ncommit=ae9bbd7b02d90b9866215de185217d33f39ab733\n==> strategy readme-cmds",
+  "commit_sha": "ae9bbd7b02d90b9866215de185217d33f39ab733",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30821072340",
+  "finished_at": "2026-08-03T14:06:13Z"
+}

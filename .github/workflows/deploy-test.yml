@@ -1,0 +1,208 @@
+name: deploy-test
+
+# 由 repository_dispatch 触发；无自定义 secret，仅用 GITHUB_TOKEN 写回 results/
+on:
+  repository_dispatch:
+    types: [deploy-test]
+  workflow_dispatch:
+    inputs:
+      owner:
+        description: Target repo owner
+        required: true
+        type: string
+      repo:
+        description: Target repo name
+        required: true
+        type: string
+      test_id:
+        description: Deploy test id
+        required: true
+        type: string
+      allow_readme:
+        description: Allow README command strategy
+        required: false
+        default: "false"
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: deploy-test-${{ github.event.client_payload.test_id || inputs.test_id }}
+  cancel-in-progress: false
+
+jobs:
+  # Job 1：在隔离步骤中跑被测代码，结果只写入文件 / artifact
+  run-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      test_id: ${{ steps.meta.outputs.test_id }}
+      full_name: ${{ steps.meta.outputs.full_name }}
+    steps:
+      - name: Checkout sandbox scripts
+        uses: actions/checkout@v4
+
+      - name: Resolve payload
+        id: meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            OWNER="${{ inputs.owner }}"
+            REPO="${{ inputs.repo }}"
+            TEST_ID="${{ inputs.test_id }}"
+            ALLOW_README="${{ inputs.allow_readme }}"
+          else
+            OWNER="${{ github.event.client_payload.owner }}"
+            REPO="${{ github.event.client_payload.repo }}"
+            TEST_ID="${{ github.event.client_payload.test_id }}"
+            ALLOW_README="${{ github.event.client_payload.allow_readme }}"
+          fi
+          FULL_NAME="${OWNER}/${REPO}"
+          if [[ -z "$OWNER" || -z "$REPO" || -z "$TEST_ID" ]]; then
+            echo "missing owner/repo/test_id" >&2
+            exit 1
+          fi
+          ALLOW_README=$(echo "${ALLOW_README:-false}" | tr '[:upper:]' '[:lower:]')
+          if [[ "$ALLOW_README" != "true" ]]; then
+            ALLOW_README=false
+          fi
+          {
+            echo "owner=$OWNER"
+            echo "repo=$REPO"
+            echo "full_name=$FULL_NAME"
+            echo "test_id=$TEST_ID"
+            echo "allow_readme=$ALLOW_README"
+          } >> "$GITHUB_OUTPUT"
+          echo "Testing $FULL_NAME test_id=$TEST_ID allow_readme=$ALLOW_README"
+
+      - name: Prepare dirs
+        shell: bash
+        run: |
+          mkdir -p "$HOME/out" "$HOME/target"
+          chmod +x scripts/run_deploy_test.sh scripts/write_result.py
+
+      - name: Run deploy test (untrusted target code)
+        shell: bash
+        env:
+          TARGET_OWNER: ${{ steps.meta.outputs.owner }}
+          TARGET_REPO: ${{ steps.meta.outputs.repo }}
+          FULL_NAME: ${{ steps.meta.outputs.full_name }}
+          TEST_ID: ${{ steps.meta.outputs.test_id }}
+          ALLOW_README: ${{ steps.meta.outputs.allow_readme }}
+          WORK_DIR: ${{ runner.temp }}/target
+          OUT_DIR: ${{ runner.temp }}/out
+          SCRIPT_DIR: ${{ github.workspace }}/scripts
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set +e
+          bash "$SCRIPT_DIR/run_deploy_test.sh"
+          rc=$?
+          set -e
+          # 脚本自身写 result.json；超时由 job timeout 处理
+          if [[ ! -f "$OUT_DIR/result.json" ]]; then
+            python3 "$SCRIPT_DIR/write_result.py" \
+              --out "$OUT_DIR/result.json" \
+              --test-id "$TEST_ID" \
+              --full-name "$FULL_NAME" \
+              --strategy "none" \
+              --status "failed" \
+              --stages-file "$OUT_DIR/stages.jsonl" \
+              --log-file "$OUT_DIR/full.log" \
+              --peak-mem-file "$OUT_DIR/peak_mem.txt" \
+              --image-size-file "$OUT_DIR/image_size.txt" \
+              --commit-sha "" \
+              --run-url "$RUN_URL"
+          fi
+          exit 0
+
+      - name: Upload test logs artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deploy-test-${{ steps.meta.outputs.test_id }}
+          path: |
+            ${{ runner.temp }}/out/result.json
+            ${{ runner.temp }}/out/full.log
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Stash result for commit job
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: result-json-${{ steps.meta.outputs.test_id }}
+          path: ${{ runner.temp }}/out/result.json
+          if-no-files-found: error
+          retention-days: 2
+
+  # Job 2：与测试隔离——只提交结果 JSON，不执行被测代码
+  commit-result:
+    needs: run-test
+    if: always() && needs.run-test.result != 'cancelled'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout sandbox repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download result JSON
+        uses: actions/download-artifact@v4
+        with:
+          name: result-json-${{ needs.run-test.outputs.test_id }}
+          path: /tmp/result-in
+
+      - name: Commit result with rebase retry
+        shell: bash
+        env:
+          TEST_ID: ${{ needs.run-test.outputs.test_id }}
+          FULL_NAME: ${{ needs.run-test.outputs.full_name }}
+        run: |
+          set -euo pipefail
+          mkdir -p results
+          SRC=$(find /tmp/result-in -name 'result.json' | head -n 1)
+          if [[ -z "$SRC" ]]; then
+            echo "result.json missing" >&2
+            exit 1
+          fi
+          # 若 run-test 被 timeout 杀掉且无完整 status，补 timeout
+          python3 - <<'PY' "$SRC" "results/${TEST_ID}.json" "$TEST_ID" "$FULL_NAME"
+          import json, sys
+          from pathlib import Path
+          src, dst, test_id, full_name = sys.argv[1:5]
+          data = json.loads(Path(src).read_text(encoding="utf-8"))
+          if data.get("status") not in ("success", "failed", "timeout"):
+              data["status"] = "failed"
+          data["test_id"] = str(test_id)
+          data["full_name"] = data.get("full_name") or full_name
+          Path(dst).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          PY
+
+          git config user.name "qraven-sandbox[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main || git fetch origin master || true
+            DEFAULT_BRANCH=$(git rev-parse --abbrev-ref origin/HEAD 2>/dev/null | sed 's|origin/||' || echo main)
+            git checkout "$DEFAULT_BRANCH" 2>/dev/null || git checkout -b "$DEFAULT_BRANCH"
+            git pull --rebase origin "$DEFAULT_BRANCH" || git pull --rebase origin main || true
+            git add "results/${TEST_ID}.json"
+            if git diff --cached --quiet; then
+              echo "no changes to commit"
+              exit 0
+            fi
+            git commit -m "result: ${TEST_ID} ${FULL_NAME}"
+            if git push origin HEAD:"$DEFAULT_BRANCH"; then
+              echo "pushed results/${TEST_ID}.json"
+              exit 0
+            fi
+            echo "push conflict, rebase retry $attempt"
+            git reset --soft HEAD~1
+            sleep $((attempt * 2))
+          done
+          echo "failed to push after retries" >&2
+          exit 1

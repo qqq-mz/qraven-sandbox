@@ -165,12 +165,37 @@ jobs:
           set -euo pipefail
           mkdir -p results
           SRC=$(find /tmp/result-in -name 'result.json' | head -n 1)
-          if [[ -z "$SRC" ]]; then
-            echo "result.json missing" >&2
+          if [[ -z "$SRC" || ! -f "$SRC" ]]; then
+            echo "result.json missing under /tmp/result-in" >&2
+            find /tmp/result-in -type f || true
             exit 1
           fi
-          # 若 run-test 被 timeout 杀掉且无完整 status，补 timeout
-          python3 - <<'PY' "$SRC" "results/${TEST_ID}.json" "$TEST_ID" "$FULL_NAME"
+          DST="results/${TEST_ID}.json"
+          python3 - "$SRC" "$DST" "$TEST_ID" "$FULL_NAME" <<'PY'
+          import json, sys
+          from pathlib import Path
+          src, dst, test_id, full_name = sys.argv[1:5]
+          data = json.loads(Path(src).read_text(encoding="utf-8"))
+          if data.get("status") not in ("success", "failed", "timeout"):
+              data["status"] = "failed"
+          data["test_id"] = str(test_id)
+          data["full_name"] = data.get("full_name") or full_name
+          Path(dst).parent.mkdir(parents=True, exist_ok=True)
+          Path(dst).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print("prepared", dst, "status=", data.get("status"))
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          BRANCH=main
+          for attempt in 1 2 3 4 5 6 8 10; do
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+            git reset --hard "origin/${BRANCH}"
+            # 重新放入本轮结果（reset 后工作区干净）
+            cp "$SRC" "$DST" 2>/dev/null || true
+            python3 - "$SRC" "$DST" "$TEST_ID" "$FULL_NAME" <<'PY'
           import json, sys
           from pathlib import Path
           src, dst, test_id, full_name = sys.argv[1:5]
@@ -181,28 +206,18 @@ jobs:
           data["full_name"] = data.get("full_name") or full_name
           Path(dst).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           PY
-
-          git config user.name "qraven-sandbox[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          for attempt in 1 2 3 4 5; do
-            git fetch origin main || git fetch origin master || true
-            DEFAULT_BRANCH=$(git rev-parse --abbrev-ref origin/HEAD 2>/dev/null | sed 's|origin/||' || echo main)
-            git checkout "$DEFAULT_BRANCH" 2>/dev/null || git checkout -b "$DEFAULT_BRANCH"
-            git pull --rebase origin "$DEFAULT_BRANCH" || git pull --rebase origin main || true
-            git add "results/${TEST_ID}.json"
+            git add "$DST"
             if git diff --cached --quiet; then
-              echo "no changes to commit"
+              echo "no changes to commit (already present)"
               exit 0
             fi
             git commit -m "result: ${TEST_ID} ${FULL_NAME}"
-            if git push origin HEAD:"$DEFAULT_BRANCH"; then
-              echo "pushed results/${TEST_ID}.json"
+            if git pull --rebase origin "$BRANCH" && git push origin "HEAD:${BRANCH}"; then
+              echo "pushed ${DST}"
               exit 0
             fi
-            echo "push conflict, rebase retry $attempt"
-            git reset --soft HEAD~1
-            sleep $((attempt * 2))
+            echo "push conflict, retry attempt=${attempt}"
+            sleep "$attempt"
           done
           echo "failed to push after retries" >&2
           exit 1

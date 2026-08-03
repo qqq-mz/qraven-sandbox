@@ -380,9 +380,11 @@ open(out, "w", encoding="utf-8").write(
 )
 print(len(picked))
 PY
-  if [[ $(wc -l <"$CMD_FILE") -le 2 ]]; then
+  # 至少一条“有实质”的安装/构建命令（排除纯 cd/export/set）
+  substantive=$(grep -Evc '^(#!/|set |cd |export |source |\.|$)' "$CMD_FILE" || true)
+  if [[ "${substantive:-0}" -lt 1 ]]; then
     record_stage "readme_extract" false $(( $(date +%s) - t1 ))
-    log "no safe install commands extracted"
+    log "no substantive install commands extracted"
     write_result "failed" "$STRATEGY" "$COMMIT_SHA"
     exit 0
   fi

@@ -1,0 +1,29 @@
+{
+  "test_id": "24",
+  "full_name": "livekit/agents",
+  "strategy_used": "pip",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "pip_install",
+      "ok": true,
+      "seconds": 7
+    },
+    {
+      "name": "import_smoke",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": 40,
+  "image_size_mb": null,
+  "error_tail": "==> clone livekit/agents\nCloning into '/home/runner/work/_temp/target'...\ncommit=4a187d164dfdb9b552846d7529652a7100918704\n==> strategy pip\nRequirement already satisfied: pip in /home/runner/work/_temp/out/venv/lib/python3.12/site-packages (24.0)\nCollecting pip\n  Downloading pip-26.2-py3-none-any.whl.metadata (4.6 kB)\nCollecting wheel\n  Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)\nCollecting setuptools\n  Downloading setuptools-83.0.0-py3-none-any.whl.metadata (6.6 kB)\nCollecting packaging>=24.0 (from wheel)\n  Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)\nDownloading pip-26.2-py3-none-any.whl (1.8 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 56.3 MB/s eta 0:00:00\nDownloading wheel-0.47.0-py3-none-any.whl (32 kB)\nDownloading setuptools-83.0.0-py3-none-any.whl (1.0 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 90.6 MB/s eta 0:00:00\nDownloading packaging-26.2-py3-none-any.whl (100 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.2/100.2 kB 30.4 MB/s eta 0:00:00\nInstalling collected packages: setuptools, pip, packaging, wheel\n  Attempting uninstall: pip\n    Found existing installation: pip 24.0\n    Uninstalling pip-24.0:\n      Successfully uninstalled pip-24.0\nSuccessfully installed packaging-26.2 pip-26.2 setuptools-83.0.0 wheel-0.47.0\nProcessing ./.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nWARNING: unknown 0.0.0 does not provide the extra 'dev'\nBuilding wheels for collected packages: UNKNOWN\n  Building wheel for UNKNOWN (pyproject.toml): started\n  Building wheel for UNKNOWN (pyproject.toml): finished with status 'done'\n  Created wheel for UNKNOWN: filename=unknown-0.0.0-py3-none-any.whl size=5678 sha256=deea149fe0cc02786f607c3db28bd373b22d9dcbfda3978c09769b6b3abc7163\n  Stored in directory: /tmp/pip-ephem-wheel-cache-ln6ui1lm/wheels/f8/9b/44/c3e5a2e0ba604611efcd06458ceea7ddf02cf2172d4fc4c18c\nSuccessfully built UNKNOWN\nInstalling collected packages: UNKNOWN\nSuccessfully installed UNKNOWN-0.0.0",
+  "commit_sha": "4a187d164dfdb9b552846d7529652a7100918704",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867353696",
+  "finished_at": "2026-08-04T01:00:31Z"
+}

@@ -1,0 +1,24 @@
+{
+  "test_id": "20",
+  "full_name": "antirez/ds4",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone antirez/ds4\nCloning into '/home/runner/work/_temp/target'...\ncommit=b7e9f0091139999b6c070a57590c447c5741da5c\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "b7e9f0091139999b6c070a57590c447c5741da5c",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867351648",
+  "finished_at": "2026-08-04T01:00:13Z"
+}

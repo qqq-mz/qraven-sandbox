@@ -1,0 +1,29 @@
+{
+  "test_id": "25",
+  "full_name": "TencentCloud/TencentDB-Agent-Memory",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 1
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone TencentCloud/TencentDB-Agent-Memory\nCloning into '/home/runner/work/_temp/target'...\ncommit=0aff21a2d9f2b8a0354aaa80a2e586aab4054562\n==> strategy readme-cmds\nCloning into 'TencentDB-Agent-Memory'...\n[error] .env 不存在。先 cp .env.example .env 并填入 LLM 参数。",
+  "commit_sha": "0aff21a2d9f2b8a0354aaa80a2e586aab4054562",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867353614",
+  "finished_at": "2026-08-04T01:00:21Z"
+}

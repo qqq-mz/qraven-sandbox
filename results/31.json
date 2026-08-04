@@ -1,0 +1,29 @@
+{
+  "test_id": "31",
+  "full_name": "oso95/scroll-world",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone oso95/scroll-world\nCloning into '/home/runner/work/_temp/target'...\ncommit=71cc36d3bb150248ae36a2c552f9cbf88802a79c\n==> strategy readme-cmds\nCloning into 'scroll-world'...",
+  "commit_sha": "71cc36d3bb150248ae36a2c552f9cbf88802a79c",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867354897",
+  "finished_at": "2026-08-04T01:00:22Z"
+}

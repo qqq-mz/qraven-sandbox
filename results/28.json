@@ -1,0 +1,24 @@
+{
+  "test_id": "28",
+  "full_name": "yc-software/qm",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone yc-software/qm\nCloning into '/home/runner/work/_temp/target'...\ncommit=5eb3393315b45b338b860572ab516db9f6eae6da\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "5eb3393315b45b338b860572ab516db9f6eae6da",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867354816",
+  "finished_at": "2026-08-04T01:00:14Z"
+}

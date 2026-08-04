@@ -1,0 +1,29 @@
+{
+  "test_id": "26",
+  "full_name": "img2threejs/img2threejs",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 1
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone img2threejs/img2threejs\nCloning into '/home/runner/work/_temp/target'...\ncommit=b604139f51d6831780240e8cf1d8b21a42401d0a\n==> strategy readme-cmds\nCloning into '/home/runner/.claude/skills/img2threejs'...",
+  "commit_sha": "b604139f51d6831780240e8cf1d8b21a42401d0a",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867354100",
+  "finished_at": "2026-08-04T01:00:14Z"
+}

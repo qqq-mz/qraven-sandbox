@@ -1,0 +1,24 @@
+{
+  "test_id": "22",
+  "full_name": "Fei-Away/Codex-Dream-Skin",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone Fei-Away/Codex-Dream-Skin\nCloning into '/home/runner/work/_temp/target'...\ncommit=1c7a859ed51bcfe4923f6483a5625a6e63f97657\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "1c7a859ed51bcfe4923f6483a5625a6e63f97657",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867352116",
+  "finished_at": "2026-08-04T01:00:14Z"
+}

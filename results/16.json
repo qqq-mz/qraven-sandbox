@@ -1,0 +1,29 @@
+{
+  "test_id": "16",
+  "full_name": "esengine/DeepSeek-Reasonix",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 2
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone esengine/DeepSeek-Reasonix\nCloning into '/home/runner/work/_temp/target'...\ncommit=c060a2e0607da3b417398cf37797d5426ca00aa4\n==> strategy readme-cmds\n\nadded 2 packages in 2s",
+  "commit_sha": "c060a2e0607da3b417398cf37797d5426ca00aa4",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867350810",
+  "finished_at": "2026-08-04T01:00:15Z"
+}

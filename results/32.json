@@ -1,0 +1,29 @@
+{
+  "test_id": "32",
+  "full_name": "drumih/turbo-fieldfare",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone drumih/turbo-fieldfare\nCloning into '/home/runner/work/_temp/target'...\ncommit=f43822ec022d675ac0acc9532601d64a9be68763\n==> strategy readme-cmds\nCloning into 'turbo-fieldfare'...\n/home/runner/work/_temp/out/readme_cmds.sh: line 5: .build/release/TurboFieldfareMac: No such file or directory",
+  "commit_sha": "f43822ec022d675ac0acc9532601d64a9be68763",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867355578",
+  "finished_at": "2026-08-04T01:00:18Z"
+}

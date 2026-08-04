@@ -1,0 +1,24 @@
+{
+  "test_id": "27",
+  "full_name": "unicity-aos/aos-ce",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone unicity-aos/aos-ce\nCloning into '/home/runner/work/_temp/target'...\ncommit=1ffa80da3e19862bea2b5d3b3519a60ac5e12ea2\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "1ffa80da3e19862bea2b5d3b3519a60ac5e12ea2",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867354900",
+  "finished_at": "2026-08-04T01:00:20Z"
+}

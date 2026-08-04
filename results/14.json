@@ -1,0 +1,24 @@
+{
+  "test_id": "14",
+  "full_name": "microsoft/AI-For-Beginners",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 18
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone microsoft/AI-For-Beginners\nCloning into '/home/runner/work/_temp/target'...\nUpdating files:  33% (4580/13703)\nUpdating files:  34% (4660/13703)\nUpdating files:  35% (4797/13703)\nUpdating files:  36% (4934/13703)\nUpdating files:  37% (5071/13703)\nUpdating files:  38% (5208/13703)\nUpdating files:  39% (5345/13703)\nUpdating files:  40% (5482/13703)\nUpdating files:  41% (5619/13703)\nUpdating files:  42% (5756/13703)\nUpdating files:  43% (5893/13703)\nUpdating files:  44% (6030/13703)\nUpdating files:  45% (6167/13703)\nUpdating files:  46% (6304/13703)\nUpdating files:  47% (6441/13703)\nUpdating files:  48% (6578/13703)\nUpdating files:  49% (6715/13703)\nUpdating files:  50% (6852/13703)\nUpdating files:  51% (6989/13703)\nUpdating files:  52% (7126/13703)\nUpdating files:  53% (7263/13703)\nUpdating files:  54% (7400/13703)\nUpdating files:  55% (7537/13703)\nUpdating files:  56% (7674/13703)\nUpdating files:  57% (7811/13703)\nUpdating files:  58% (7948/13703)\nUpdating files:  59% (8085/13703)\nUpdating files:  60% (8222/13703)\nUpdating files:  61% (8359/13703)\nUpdating files:  62% (8496/13703)\nUpdating files:  62% (8618/13703)\nUpdating files:  63% (8633/13703)\nUpdating files:  64% (8770/13703)\nUpdating files:  65% (8907/13703)\nUpdating files:  66% (9044/13703)\nUpdating files:  67% (9182/13703)\nUpdating files:  68% (9319/13703)\nUpdating files:  69% (9456/13703)\nUpdating files:  70% (9593/13703)\nUpdating files:  71% (9730/13703)\nUpdating files:  72% (9867/13703)\nUpdating files:  73% (10004/13703)\nUpdating files:  74% (10141/13703)\nUpdating files:  75% (10278/13703)\nUpdating files:  76% (10415/13703)\nUpdating files:  77% (10552/13703)\nUpdating files:  78% (10689/13703)\nUpdating files:  79% (10826/13703)\nUpdating files:  80% (10963/13703)\nUpdating files:  81% (11100/13703)\nUpdating files:  82% (11237/13703)\nUpdating files:  83% (11374/13703)\nUpdating files:  83% (11432/13703)\nUpdating files:  84% (11511/13703)\nUpdating files:  85% (11648/13703)\nUpdating files:  86% (11785/13703)\nUpdating files:  87% (11922/13703)\nUpdating files:  88% (12059/13703)\nUpdating files:  89% (12196/13703)\nUpdating files:  90% (12333/13703)\nUpdating files:  91% (12470/13703)\nUpdating files:  92% (12607/13703)\nUpdating files:  93% (12744/13703)\nUpdating files:  94% (12881/13703)\nUpdating files:  95% (13018/13703)\nUpdating files:  96% (13155/13703)\nUpdating files:  97% (13292/13703)\nUpdating files:  98% (13429/13703)\nUpdating files:  99% (13566/13703)\nUpdating files: 100% (13703/13703)\nUpdating files: 100% (13703/13703), done.\ncommit=33e781bf7bfb9b39fd27c4e4a3e592669b52cb4b\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "33e781bf7bfb9b39fd27c4e4a3e592669b52cb4b",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867351413",
+  "finished_at": "2026-08-04T01:00:28Z"
+}

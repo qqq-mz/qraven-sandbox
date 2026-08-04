@@ -1,0 +1,29 @@
+{
+  "test_id": "21",
+  "full_name": "zhaoxuya520/reverse-skill",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 2
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone zhaoxuya520/reverse-skill\nCloning into '/home/runner/work/_temp/target'...\ncommit=62ba932019a7a30afac13afb1fb157a17e19f1bf\n==> strategy readme-cmds\nCloning into 'reverse-skill'...",
+  "commit_sha": "62ba932019a7a30afac13afb1fb157a17e19f1bf",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867354386",
+  "finished_at": "2026-08-04T01:00:17Z"
+}

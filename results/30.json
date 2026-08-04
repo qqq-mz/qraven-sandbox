@@ -1,0 +1,24 @@
+{
+  "test_id": "30",
+  "full_name": "MoonshotAI/Kimi-K3",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone MoonshotAI/Kimi-K3\nCloning into '/home/runner/work/_temp/target'...\ncommit=7c5be9599120d7993748de66a76128614f15f210\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "7c5be9599120d7993748de66a76128614f15f210",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30867355008",
+  "finished_at": "2026-08-04T01:00:15Z"
+}

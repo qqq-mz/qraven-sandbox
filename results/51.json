@@ -1,0 +1,24 @@
+{
+  "test_id": "51",
+  "full_name": "MIgHTy-alIeN/MEV-Ethereum-Trading-Bot",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone MIgHTy-alIeN/MEV-Ethereum-Trading-Bot\nCloning into '/home/runner/work/_temp/target'...\ncommit=f40733a5967cecba0735a865d994e76cf6e1d03c\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "f40733a5967cecba0735a865d994e76cf6e1d03c",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965062680",
+  "finished_at": "2026-08-05T01:00:17Z"
+}

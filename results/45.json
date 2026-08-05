@@ -1,0 +1,29 @@
+{
+  "test_id": "45",
+  "full_name": "mshumer/Claude-of-Duty",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 900
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone mshumer/Claude-of-Duty\nCloning into '/home/runner/work/_temp/target'...\ncommit=d9b237b75c9304ab8d9ef4cfa0c3568c7c11a853\n==> strategy readme-cmds\n\nadded 17 packages, and audited 18 packages in 9s\n\n5 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n> claude-of-duty@1.0.0 dev\n> vite\n\n\n  \u001b[32m\u001b[1mVITE\u001b[22m v7.3.6\u001b[39m  \u001b[2mready in \u001b[0m\u001b[1m121\u001b[22m\u001b[2m\u001b[0m ms\u001b[22m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://127.0.0.1:\u001b[1m5173\u001b[22m/\u001b[39m",
+  "commit_sha": "d9b237b75c9304ab8d9ef4cfa0c3568c7c11a853",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965060020",
+  "finished_at": "2026-08-05T01:15:17Z"
+}

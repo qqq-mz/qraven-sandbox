@@ -1,0 +1,29 @@
+{
+  "test_id": "53",
+  "full_name": "AlephAITech/WorkBuddyGuide",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 900
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone AlephAITech/WorkBuddyGuide\nCloning into '/home/runner/work/_temp/target'...\ncommit=6b5e2403f0f2ad5d3f7ab7a67e9c4d4113583ff3\n==> strategy readme-cmds\n\nadded 341 packages, and audited 342 packages in 7s\n\n72 packages are looking for funding\n  run `npm fund` for details\n\n7 vulnerabilities (1 low, 2 moderate, 4 high)\n\nTo address issues that do not require attention, run:\n  npm audit fix\n\nSome issues need review, and may require choosing\na different dependency.\n\nRun `npm audit` for details.\n\n> workbuddy-guide@1.0.0 dev\n> vitepress dev docs --host 127.0.0.1\n\n\n  \u001b[32m\u001b[1mvitepress\u001b[22m v1.6.4\u001b[39m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://127.0.0.1:\u001b[1m5173\u001b[22m/\u001b[39m",
+  "commit_sha": "6b5e2403f0f2ad5d3f7ab7a67e9c4d4113583ff3",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965062896",
+  "finished_at": "2026-08-05T01:15:24Z"
+}

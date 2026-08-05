@@ -1,0 +1,24 @@
+{
+  "test_id": "37",
+  "full_name": "digimata/quill",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone digimata/quill\nCloning into '/home/runner/work/_temp/target'...\ncommit=855869e00b18bc9e7e6d171211780b439ce6ccd7\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "855869e00b18bc9e7e6d171211780b439ce6ccd7",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965057446",
+  "finished_at": "2026-08-05T01:00:12Z"
+}

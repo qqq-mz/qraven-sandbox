@@ -1,0 +1,24 @@
+{
+  "test_id": "36",
+  "full_name": "withmarbleapp/os-taxonomy",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone withmarbleapp/os-taxonomy\nCloning into '/home/runner/work/_temp/target'...\ncommit=96a7933754af672e1bfdbf7ecb05c325860c6e0d\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "96a7933754af672e1bfdbf7ecb05c325860c6e0d",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965057175",
+  "finished_at": "2026-08-05T01:00:13Z"
+}

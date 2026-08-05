@@ -1,0 +1,24 @@
+{
+  "test_id": "44",
+  "full_name": "vercel-labs/scriptc",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone vercel-labs/scriptc\nCloning into '/home/runner/work/_temp/target'...\ncommit=adae252881b75191b8f6dd362e2b47992fa08680\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "adae252881b75191b8f6dd362e2b47992fa08680",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965059662",
+  "finished_at": "2026-08-05T01:00:15Z"
+}

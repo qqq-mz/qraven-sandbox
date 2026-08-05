@@ -1,0 +1,24 @@
+{
+  "test_id": "50",
+  "full_name": "Shpigford/knockoff",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone Shpigford/knockoff\nCloning into '/home/runner/work/_temp/target'...\ncommit=5db1219f85add663342085f0699dd18479c7ac43\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "5db1219f85add663342085f0699dd18479c7ac43",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965062327",
+  "finished_at": "2026-08-05T01:00:15Z"
+}

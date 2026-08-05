@@ -1,0 +1,29 @@
+{
+  "test_id": "38",
+  "full_name": "nyblnet/bento",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 900
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone nyblnet/bento\nCloning into '/home/runner/work/_temp/target'...\ncommit=cc038183dbf79a33bee7fe49d0aa1c23f7224874\n==> strategy readme-cmds\n\nadded 80 packages, and audited 81 packages in 3s\n\n8 packages are looking for funding\n  run `npm fund` for details\n\n1 moderate severity vulnerability\n\nTo address all issues, run:\n  npm audit fix\n\nRun `npm audit` for details.\n\n> bento-slides@1.0.16 dev\n> vite\n\n\n  \u001b[32m\u001b[1mVITE\u001b[22m v7.3.6\u001b[39m  \u001b[2mready in \u001b[0m\u001b[1m252\u001b[22m\u001b[2m\u001b[0m ms\u001b[22m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m5173\u001b[22m/\u001b[39m\n\u001b[2m  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m\u001b[2m: use \u001b[22m\u001b[1m--host\u001b[22m\u001b[2m to expose\u001b[22m",
+  "commit_sha": "cc038183dbf79a33bee7fe49d0aa1c23f7224874",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965058076",
+  "finished_at": "2026-08-05T01:15:12Z"
+}

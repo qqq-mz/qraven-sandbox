@@ -1,0 +1,29 @@
+{
+  "test_id": "43",
+  "full_name": "kvcache-ai/AgentENV",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 6
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone kvcache-ai/AgentENV\nCloning into '/home/runner/work/_temp/target'...\ncommit=0ee2bff7e0ca63e9d81101ec0768e85cdd6e02d6\n==> strategy readme-cmds\nlatest: Pulling from kvcache-ai/aenv-server\nca2678b20700: Pulling fs layer\n9a73247c8953: Pulling fs layer\n4513fa0b4a9d: Pulling fs layer\n003325a26dc4: Pulling fs layer\nad3cd866d91b: Pulling fs layer\n5702f8e031f2: Pulling fs layer\n8d353e6cabcf: Pulling fs layer\n9c471a7d6b06: Pulling fs layer\n074eba8c464b: Pulling fs layer\n55bd79bf20f4: Pulling fs layer\n080754763736: Pulling fs layer\n8d353e6cabcf: Waiting\n9c471a7d6b06: Waiting\n074eba8c464b: Waiting\n55bd79bf20f4: Waiting\n080754763736: Waiting\n003325a26dc4: Waiting\nad3cd866d91b: Waiting\n5702f8e031f2: Waiting\n9a73247c8953: Verifying Checksum\n9a73247c8953: Download complete\nca2678b20700: Verifying Checksum\nca2678b20700: Download complete\n003325a26dc4: Verifying Checksum\n003325a26dc4: Download complete\n4513fa0b4a9d: Verifying Checksum\n4513fa0b4a9d: Download complete\n5702f8e031f2: Verifying Checksum\n5702f8e031f2: Download complete\nad3cd866d91b: Verifying Checksum\nad3cd866d91b: Download complete\n9c471a7d6b06: Verifying Checksum\n9c471a7d6b06: Download complete\n55bd79bf20f4: Verifying Checksum\n55bd79bf20f4: Download complete\nca2678b20700: Pull complete\n8d353e6cabcf: Verifying Checksum\n8d353e6cabcf: Download complete\n080754763736: Verifying Checksum\n080754763736: Download complete\n074eba8c464b: Verifying Checksum\n9a73247c8953: Pull complete\n4513fa0b4a9d: Pull complete\n003325a26dc4: Pull complete\nad3cd866d91b: Pull complete\n5702f8e031f2: Pull complete\n8d353e6cabcf: Pull complete\n9c471a7d6b06: Pull complete\n074eba8c464b: Pull complete\n55bd79bf20f4: Pull complete\n080754763736: Pull complete\nDigest: sha256:1c6d6c95cbfd90be37767f98450bf92774a71cd72984bf7304506941f558a372\nStatus: Downloaded newer image for ghcr.io/kvcache-ai/aenv-server:latest\nghcr.io/kvcache-ai/aenv-server:latest\n2910c4dd1f23e4764ad099889d0a3d5201d56599a495884f4ee5159af5e500bb",
+  "commit_sha": "0ee2bff7e0ca63e9d81101ec0768e85cdd6e02d6",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965059353",
+  "finished_at": "2026-08-05T01:00:28Z"
+}

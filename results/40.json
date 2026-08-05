@@ -1,0 +1,24 @@
+{
+  "test_id": "40",
+  "full_name": "DavidHDev/canvas-ui",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone DavidHDev/canvas-ui\nCloning into '/home/runner/work/_temp/target'...\ncommit=880de315dd23d8add253575655ddc57f2160a19d\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "880de315dd23d8add253575655ddc57f2160a19d",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965059200",
+  "finished_at": "2026-08-05T01:00:14Z"
+}

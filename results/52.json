@@ -1,0 +1,24 @@
+{
+  "test_id": "52",
+  "full_name": "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer\nCloning into '/home/runner/work/_temp/target'...\ncommit=f84ceae5133e21e6c8fb46d15c0e2e0f9f9098b0\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "f84ceae5133e21e6c8fb46d15c0e2e0f9f9098b0",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965062437",
+  "finished_at": "2026-08-05T01:00:22Z"
+}

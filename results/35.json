@@ -1,0 +1,24 @@
+{
+  "test_id": "35",
+  "full_name": "petergyang/no-ai-slop",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone petergyang/no-ai-slop\nCloning into '/home/runner/work/_temp/target'...\ncommit=f284f8ce636421c9300c02ea895bf5ca06d36c68\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "f284f8ce636421c9300c02ea895bf5ca06d36c68",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965056869",
+  "finished_at": "2026-08-05T01:00:12Z"
+}

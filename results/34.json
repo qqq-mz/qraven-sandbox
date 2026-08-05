@@ -1,0 +1,29 @@
+{
+  "test_id": "34",
+  "full_name": "bashalarmistalt/decimen-optical-transfer",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 900
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone bashalarmistalt/decimen-optical-transfer\nCloning into '/home/runner/work/_temp/target'...\ncommit=29cba8fa25dd160c8b6aa18fe3b48fbc5bde2e36\n==> strategy readme-cmds\nnpm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\n\nadded 380 packages, and audited 381 packages in 4s\n\n107 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n> decimen-optical-transfer@0.3.0 dev\n> vite\n\n\n  \u001b[32m\u001b[1mVITE\u001b[22m v6.4.3\u001b[39m  \u001b[2mready in \u001b[0m\u001b[1m248\u001b[22m\u001b[2m\u001b[0m ms\u001b[22m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttps://localhost:\u001b[1m5173\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttps://localhost.localdomain:\u001b[1m5173\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttps://lvh.me:\u001b[1m5173\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttps://vite.lvh.me:\u001b[1m5173\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m: \u001b[36mhttps://10.1.0.221:\u001b[1m5173\u001b[22m/\u001b[39m",
+  "commit_sha": "29cba8fa25dd160c8b6aa18fe3b48fbc5bde2e36",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965056895",
+  "finished_at": "2026-08-05T01:15:12Z"
+}

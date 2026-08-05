@@ -1,0 +1,24 @@
+{
+  "test_id": "39",
+  "full_name": "Vincentwei1021/video-shotcraft",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone Vincentwei1021/video-shotcraft\nCloning into '/home/runner/work/_temp/target'...\ncommit=0022ec45d28800cecb5b16624a3179093c93f4e9\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "0022ec45d28800cecb5b16624a3179093c93f4e9",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965058701",
+  "finished_at": "2026-08-05T01:00:13Z"
+}

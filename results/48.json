@@ -1,0 +1,24 @@
+{
+  "test_id": "48",
+  "full_name": "Sahir619/fable-method",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone Sahir619/fable-method\nCloning into '/home/runner/work/_temp/target'...\ncommit=88b5cf36b10ee3679e08ee0f0181b9774d481508\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "88b5cf36b10ee3679e08ee0f0181b9774d481508",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965060747",
+  "finished_at": "2026-08-05T01:00:20Z"
+}

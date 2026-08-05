@@ -1,0 +1,24 @@
+{
+  "test_id": "42",
+  "full_name": "jakubkrehel/skills",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone jakubkrehel/skills\nCloning into '/home/runner/work/_temp/target'...\ncommit=a67333399dabbc71d7778962cb9c4fb9b86a00d0\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "a67333399dabbc71d7778962cb9c4fb9b86a00d0",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/30965059151",
+  "finished_at": "2026-08-05T01:00:13Z"
+}

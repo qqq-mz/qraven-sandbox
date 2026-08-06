@@ -1,0 +1,29 @@
+{
+  "test_id": "65",
+  "full_name": "littledivy/mimic",
+  "strategy_used": "pip",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "pip_install",
+      "ok": true,
+      "seconds": 10
+    },
+    {
+      "name": "import_smoke",
+      "ok": true,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": 49,
+  "image_size_mb": null,
+  "error_tail": "==> clone littledivy/mimic\nCloning into '/home/runner/work/_temp/target'...\ncommit=8cf998ac0b365806d8e522d34107cc504ecaa345\n==> strategy pip\nRequirement already satisfied: pip in /home/runner/work/_temp/out/venv/lib/python3.12/site-packages (24.0)\nCollecting pip\n  Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)\nCollecting wheel\n  Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)\nCollecting setuptools\n  Downloading setuptools-83.0.0-py3-none-any.whl.metadata (6.6 kB)\nCollecting packaging>=24.0 (from wheel)\n  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)\nDownloading pip-26.2.1-py3-none-any.whl (1.8 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 38.6 MB/s eta 0:00:00\nDownloading wheel-0.47.0-py3-none-any.whl (32 kB)\nDownloading setuptools-83.0.0-py3-none-any.whl (1.0 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 119.6 MB/s eta 0:00:00\nDownloading packaging-26.3-py3-none-any.whl (129 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 51.7 MB/s eta 0:00:00\nInstalling collected packages: setuptools, pip, packaging, wheel\n  Attempting uninstall: pip\n    Found existing installation: pip 24.0\n    Uninstalling pip-24.0:\n      Successfully uninstalled pip-24.0\nSuccessfully installed packaging-26.3 pip-26.2.1 setuptools-83.0.0 wheel-0.47.0\nProcessing ./.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nCollecting requests>=2.28 (from mimic-client==0.1.0)\n  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)\nWARNING: mimic-client 0.1.0 does not provide the extra 'dev'\nCollecting charset_normalizer<4,>=2 (from requests>=2.28->mimic-client==0.1.0)\n  Downloading charset_normalizer-3.4.9-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (41 kB)\nCollecting idna<4,>=2.5 (from requests>=2.28->mimic-client==0.1.0)\n  Downloading idna-3.18-py3-none-any.whl.metadata (6.1 kB)\nCollecting urllib3<3,>=1.26 (from requests>=2.28->mimic-client==0.1.0)\n  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)\nCollecting certifi>=2023.5.7 (from requests>=2.28->mimic-client==0.1.0)\n  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\nDownloading requests-2.34.2-py3-none-any.whl (73 kB)\nDownloading charset_normalizer-3.4.9-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (224 kB)\nDownloading idna-3.18-py3-none-any.whl (65 kB)\nDownloading urllib3-2.7.0-py3-none-any.whl (131 kB)\nDownloading certifi-2026.7.22-py3-none-any.whl (136 kB)\nBuilding wheels for collected packages: mimic-client\n  Building wheel for mimic-client (pyproject.toml): started\n  Building wheel for mimic-client (pyproject.toml): finished with status 'done'\n  Created wheel for mimic-client: filename=mimic_client-0.1.0-py3-none-any.whl size=17754 sha256=d96044605c3ab2540f7648cb12d1b6fb16ae2fdfc0cb1fdb5058b38c2f89ae1c\n  Stored in directory: /tmp/pip-ephem-wheel-cache-a1z211qd/wheels/f8/9b/44/c3e5a2e0ba604611efcd06458ceea7ddf02cf2172d4fc4c18c\nSuccessfully built mimic-client\nInstalling collected packages: urllib3, idna, charset_normalizer, certifi, requests, mimic-client\n\nSuccessfully installed certifi-2026.7.22 charset_normalizer-3.4.9 idna-3.18 mimic-client-0.1.0 requests-2.34.2 urllib3-2.7.0\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/usr/lib/python3.12/importlib/__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1324, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'mimic_client'\nimport ok: mimic",
+  "commit_sha": "8cf998ac0b365806d8e522d34107cc504ecaa345",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061443162",
+  "finished_at": "2026-08-06T01:00:29Z"
+}

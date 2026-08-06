@@ -1,0 +1,24 @@
+{
+  "test_id": "66",
+  "full_name": "QoderAI/better-harness",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone QoderAI/better-harness\nCloning into '/home/runner/work/_temp/target'...\ncommit=5e46a7c20f7ddf6c64d19d781d8f5a62f5162935\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "5e46a7c20f7ddf6c64d19d781d8f5a62f5162935",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061443199",
+  "finished_at": "2026-08-06T01:00:19Z"
+}

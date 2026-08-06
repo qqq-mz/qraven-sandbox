@@ -1,0 +1,24 @@
+{
+  "test_id": "70",
+  "full_name": "AminBlg/SimpleEnglish",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone AminBlg/SimpleEnglish\nCloning into '/home/runner/work/_temp/target'...\ncommit=379728b51981b6d2ee1de0f201164483a9648972\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "379728b51981b6d2ee1de0f201164483a9648972",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061445025",
+  "finished_at": "2026-08-06T01:00:15Z"
+}

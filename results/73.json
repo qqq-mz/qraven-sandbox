@@ -1,0 +1,24 @@
+{
+  "test_id": "73",
+  "full_name": "sqliteai/waste",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone sqliteai/waste\nCloning into '/home/runner/work/_temp/target'...\ncommit=df542092e1c17bc8a403ad25d3112d6f06e157ea\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "df542092e1c17bc8a403ad25d3112d6f06e157ea",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061445689",
+  "finished_at": "2026-08-06T01:00:16Z"
+}

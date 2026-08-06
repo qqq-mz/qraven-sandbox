@@ -1,0 +1,29 @@
+{
+  "test_id": "54",
+  "full_name": "penecho/penecho",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 6
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone penecho/penecho\nCloning into '/home/runner/work/_temp/target'...\ncommit=6666ba517010d43425585ad0612b33c5e452c4fd\n==> strategy readme-cmds\n\nadded 39 packages in 4s\n\n7 packages are looking for funding\n  run `npm fund` for details",
+  "commit_sha": "6666ba517010d43425585ad0612b33c5e452c4fd",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061441572",
+  "finished_at": "2026-08-06T01:00:20Z"
+}

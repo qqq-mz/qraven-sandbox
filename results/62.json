@@ -1,0 +1,29 @@
+{
+  "test_id": "62",
+  "full_name": "makecindy/cindy",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 5
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 7
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone makecindy/cindy\nCloning into '/home/runner/work/_temp/target'...\nUpdating files:  52% (3703/7118)\nUpdating files:  53% (3773/7118)\nUpdating files:  54% (3844/7118)\nUpdating files:  55% (3915/7118)\nUpdating files:  56% (3987/7118)\nUpdating files:  57% (4058/7118)\nUpdating files:  58% (4129/7118)\nUpdating files:  59% (4200/7118)\nUpdating files:  60% (4271/7118)\nUpdating files:  61% (4342/7118)\nUpdating files:  62% (4414/7118)\nUpdating files:  63% (4485/7118)\nUpdating files:  64% (4556/7118)\nUpdating files:  65% (4627/7118)\nUpdating files:  66% (4698/7118)\nUpdating files:  67% (4770/7118)\nUpdating files:  68% (4841/7118)\nUpdating files:  69% (4912/7118)\nUpdating files:  70% (4983/7118)\nUpdating files:  71% (5054/7118)\nUpdating files:  72% (5125/7118)\nUpdating files:  73% (5197/7118)\nUpdating files:  74% (5268/7118)\nUpdating files:  75% (5339/7118)\nUpdating files:  76% (5410/7118)\nUpdating files:  77% (5481/7118)\nUpdating files:  78% (5553/7118)\nUpdating files:  79% (5624/7118)\nUpdating files:  80% (5695/7118)\nUpdating files:  81% (5766/7118)\nUpdating files:  82% (5837/7118)\nUpdating files:  83% (5908/7118)\nUpdating files:  84% (5980/7118)\nUpdating files:  85% (6051/7118)\nUpdating files:  86% (6122/7118)\nUpdating files:  87% (6193/7118)\nUpdating files:  88% (6264/7118)\nUpdating files:  89% (6336/7118)\nUpdating files:  90% (6407/7118)\nUpdating files:  91% (6478/7118)\nUpdating files:  92% (6549/7118)\nUpdating files:  93% (6620/7118)\nUpdating files:  94% (6691/7118)\nUpdating files:  95% (6763/7118)\nUpdating files:  96% (6834/7118)\nUpdating files:  97% (6905/7118)\nUpdating files:  98% (6976/7118)\nUpdating files:  99% (7047/7118)\nUpdating files: 100% (7118/7118)\nUpdating files: 100% (7118/7118), done.\ncommit=2cd69eff7e6cf5c094acfb0b35d5452290fb8a5b\n==> strategy readme-cmds\nCloning into 'cindy'...\nSubmodule 'cindy-protocol' (https://github.com/makecindy/cindy-protocol.git) registered for path 'cindy-protocol'\nCloning into '/home/runner/work/_temp/target/cindy/cindy-protocol'...\nSubmodule path 'cindy-protocol': checked out '74f6a54425b6355867308aa5f1282a3fabb190ee'\n/home/runner/work/_temp/out/readme_cmds.sh: line 7: pnpm: command not found",
+  "commit_sha": "2cd69eff7e6cf5c094acfb0b35d5452290fb8a5b",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061442401",
+  "finished_at": "2026-08-06T01:00:23Z"
+}

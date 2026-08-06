@@ -1,0 +1,29 @@
+{
+  "test_id": "63",
+  "full_name": "powerycy/goutoujunshi",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 1
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone powerycy/goutoujunshi\nCloning into '/home/runner/work/_temp/target'...\ncommit=619463afae6004ba586017d774e5646e8612ff99\n==> strategy readme-cmds\nCloning into '/home/runner/.codex/skills/goutoujunshi'...",
+  "commit_sha": "619463afae6004ba586017d774e5646e8612ff99",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061442221",
+  "finished_at": "2026-08-06T01:00:19Z"
+}

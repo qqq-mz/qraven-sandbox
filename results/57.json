@@ -1,0 +1,29 @@
+{
+  "test_id": "57",
+  "full_name": "tandpfun/wardrobe",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 900
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone tandpfun/wardrobe\nCloning into '/home/runner/work/_temp/target'...\ncommit=f44006cce7e4779e595a35b25fbbc8dabc68d7e4\n==> strategy readme-cmds\nCloning into 'wardrobe'...\n\nadded 146 packages in 7s\n\n> wardrobe@1.0.0 dev\n> vite\n\n\n  \u001b[32m\u001b[1mVITE\u001b[22m v6.4.3\u001b[39m  \u001b[2mready in \u001b[0m\u001b[1m371\u001b[22m\u001b[2m\u001b[0m ms\u001b[22m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m5173\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m: \u001b[36mhttp://10.1.0.148:\u001b[1m5173\u001b[22m/\u001b[39m",
+  "commit_sha": "f44006cce7e4779e595a35b25fbbc8dabc68d7e4",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061441755",
+  "finished_at": "2026-08-06T01:15:13Z"
+}

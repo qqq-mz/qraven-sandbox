@@ -1,0 +1,24 @@
+{
+  "test_id": "59",
+  "full_name": "buchidonggua/dg-ai-notes",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone buchidonggua/dg-ai-notes\nCloning into '/home/runner/work/_temp/target'...\ncommit=fdf9ccd78739da2e0d8dddcd487316cda90038d0\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "fdf9ccd78739da2e0d8dddcd487316cda90038d0",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061440895",
+  "finished_at": "2026-08-06T01:00:12Z"
+}

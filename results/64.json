@@ -1,0 +1,29 @@
+{
+  "test_id": "64",
+  "full_name": "vinhhien112/Three.js-Object-Sculptor-Codex-Plugin",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone vinhhien112/Three.js-Object-Sculptor-Codex-Plugin\nCloning into '/home/runner/work/_temp/target'...\ncommit=543da1fc0e45a703b0ac037fb040ce082c79a1c2\n==> strategy readme-cmds\nfatal: repository 'REPOSITORY_URL' does not exist",
+  "commit_sha": "543da1fc0e45a703b0ac037fb040ce082c79a1c2",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061442263",
+  "finished_at": "2026-08-06T01:00:13Z"
+}

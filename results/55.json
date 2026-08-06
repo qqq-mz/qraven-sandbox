@@ -1,0 +1,24 @@
+{
+  "test_id": "55",
+  "full_name": "MaximeRivest/riddle",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone MaximeRivest/riddle\nCloning into '/home/runner/work/_temp/target'...\ncommit=0d1a9feea75027543e2ed49c721656cd261f03a1\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "0d1a9feea75027543e2ed49c721656cd261f03a1",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061441413",
+  "finished_at": "2026-08-06T01:00:18Z"
+}

@@ -1,0 +1,24 @@
+{
+  "test_id": "61",
+  "full_name": "bryanthaboi/gen1recomp",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 3
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone bryanthaboi/gen1recomp\nCloning into '/home/runner/work/_temp/target'...\ncommit=1d77d42fe2118df3bb624aa0bff6a1fa6533c003\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "1d77d42fe2118df3bb624aa0bff6a1fa6533c003",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061442249",
+  "finished_at": "2026-08-06T01:00:15Z"
+}

@@ -1,0 +1,24 @@
+{
+  "test_id": "58",
+  "full_name": "simonlin1212/Vibe-Research",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone simonlin1212/Vibe-Research\nCloning into '/home/runner/work/_temp/target'...\ncommit=3eae02d64462bab04460e210077df614e75e99bb\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "3eae02d64462bab04460e210077df614e75e99bb",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061442677",
+  "finished_at": "2026-08-06T01:00:19Z"
+}

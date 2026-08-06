@@ -1,0 +1,24 @@
+{
+  "test_id": "71",
+  "full_name": "OpenBMB/StaffDeck",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone OpenBMB/StaffDeck\nCloning into '/home/runner/work/_temp/target'...\ncommit=b3038b25e2eb43e8be9d46707b517426d5bcde29\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "b3038b25e2eb43e8be9d46707b517426d5bcde29",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061444948",
+  "finished_at": "2026-08-06T01:00:15Z"
+}

@@ -1,0 +1,29 @@
+{
+  "test_id": "56",
+  "full_name": "QwenAudio/qwen-audio-agent",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 6
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone QwenAudio/qwen-audio-agent\nCloning into '/home/runner/work/_temp/target'...\ncommit=b86007fd59e13c5eb098929ab8068d4c564e4715\n==> strategy readme-cmds\nnpm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.\n\nadded 156 packages in 6s\n\n38 packages are looking for funding\n  run `npm fund` for details",
+  "commit_sha": "b86007fd59e13c5eb098929ab8068d4c564e4715",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061441219",
+  "finished_at": "2026-08-06T01:00:17Z"
+}

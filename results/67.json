@@ -1,0 +1,24 @@
+{
+  "test_id": "67",
+  "full_name": "oil-oil/beautify-github-readme",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone oil-oil/beautify-github-readme\nCloning into '/home/runner/work/_temp/target'...\ncommit=55bdb1c05414cd7a0cf911d02e55ece79777206e\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "55bdb1c05414cd7a0cf911d02e55ece79777206e",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31061443708",
+  "finished_at": "2026-08-06T01:00:20Z"
+}

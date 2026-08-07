@@ -1,0 +1,24 @@
+{
+  "test_id": "84",
+  "full_name": "google/guava",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone google/guava\nCloning into '/home/runner/work/_temp/target'...\ncommit=c3c98221e8afb98d508aba43d00ee3c6d685b4d0\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "c3c98221e8afb98d508aba43d00ee3c6d685b4d0",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136568287",
+  "finished_at": "2026-08-07T01:00:15Z"
+}

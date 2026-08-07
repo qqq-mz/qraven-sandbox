@@ -1,0 +1,29 @@
+{
+  "test_id": "83",
+  "full_name": "webpack/webpack",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 48
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone webpack/webpack\nCloning into '/home/runner/work/_temp/target'...\ncommit=e048e5f162c4ac45ec7693b01024bb985d48a42a\n==> strategy readme-cmds\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn ERESOLVE overriding peer dependency\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\nnpm warn deprecated glob@5.0.15: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated istanbul@0.4.5: This module is no longer maintained, try this instead:\nnpm warn deprecated   npm i nyc\nnpm warn deprecated Visit https://istanbul.js.org/integrations for other alternatives.\nnpm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\n\nadded 1679 packages, and audited 1680 packages in 44s\n\n429 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities",
+  "commit_sha": "e048e5f162c4ac45ec7693b01024bb985d48a42a",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136567981",
+  "finished_at": "2026-08-07T01:01:04Z"
+}

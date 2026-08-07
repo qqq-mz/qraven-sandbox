@@ -1,0 +1,24 @@
+{
+  "test_id": "93",
+  "full_name": "cloudflare/computer",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone cloudflare/computer\nCloning into '/home/runner/work/_temp/target'...\ncommit=c7bdfcbe3182632d16716feb144ca2055b90cb87\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "c7bdfcbe3182632d16716feb144ca2055b90cb87",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136570371",
+  "finished_at": "2026-08-07T01:00:14Z"
+}

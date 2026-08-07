@@ -1,0 +1,24 @@
+{
+  "test_id": "90",
+  "full_name": "goauthentik/authentik",
+  "strategy_used": "pip",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 5
+    },
+    {
+      "name": "pip_install",
+      "ok": false,
+      "seconds": 11
+    }
+  ],
+  "peak_mem_mb": 40,
+  "image_size_mb": null,
+  "error_tail": "==> clone goauthentik/authentik\nCloning into '/home/runner/work/_temp/target'...\ncommit=065170f2e69f5f180d6ff30ed9c1aa1434806dd1\n==> strategy pip\nRequirement already satisfied: pip in /home/runner/work/_temp/out/venv/lib/python3.12/site-packages (24.0)\nCollecting pip\n  Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)\nCollecting wheel\n  Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)\nCollecting setuptools\n  Downloading setuptools-83.0.0-py3-none-any.whl.metadata (6.6 kB)\nCollecting packaging>=24.0 (from wheel)\n  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)\nDownloading pip-26.2.1-py3-none-any.whl (1.8 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 48.0 MB/s eta 0:00:00\nDownloading wheel-0.47.0-py3-none-any.whl (32 kB)\nDownloading setuptools-83.0.0-py3-none-any.whl (1.0 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 62.2 MB/s eta 0:00:00\nDownloading packaging-26.3-py3-none-any.whl (129 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 49.5 MB/s eta 0:00:00\nInstalling collected packages: setuptools, pip, packaging, wheel\n  Attempting uninstall: pip\n    Found existing installation: pip 24.0\n    Uninstalling pip-24.0:\n      Successfully uninstalled pip-24.0\nSuccessfully installed packaging-26.3 pip-26.2.1 setuptools-83.0.0 wheel-0.47.0\nProcessing ./.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nINFO: pip is looking at multiple versions of authentik to determine which version is compatible with other requirements. This could take a while.\nERROR: Package 'authentik' requires a different Python: 3.12.3 not in '==3.14.*'\nProcessing ./.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nINFO: pip is looking at multiple versions of authentik to determine which version is compatible with other requirements. This could take a while.\nERROR: Package 'authentik' requires a different Python: 3.12.3 not in '==3.14.*'",
+  "commit_sha": "065170f2e69f5f180d6ff30ed9c1aa1434806dd1",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136573390",
+  "finished_at": "2026-08-07T01:00:33Z"
+}

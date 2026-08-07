@@ -1,0 +1,24 @@
+{
+  "test_id": "75",
+  "full_name": "mattpocock/skills",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone mattpocock/skills\nCloning into '/home/runner/work/_temp/target'...\ncommit=84fdeffd12f2ee307994d1eb6feb48173b6e0502\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136566940",
+  "finished_at": "2026-08-07T01:00:13Z"
+}

@@ -1,0 +1,29 @@
+{
+  "test_id": "81",
+  "full_name": "addyosmani/agent-skills",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 1
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone addyosmani/agent-skills\nCloning into '/home/runner/work/_temp/target'...\ncommit=d2478bf0c73a6357df39a3ed6aff16acaa218843\n==> strategy readme-cmds\nCloning into 'agent-skills'...",
+  "commit_sha": "d2478bf0c73a6357df39a3ed6aff16acaa218843",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136567716",
+  "finished_at": "2026-08-07T01:00:14Z"
+}

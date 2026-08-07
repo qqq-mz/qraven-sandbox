@@ -1,0 +1,24 @@
+{
+  "test_id": "89",
+  "full_name": "EveryInc/compound-engineering-plugin",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone EveryInc/compound-engineering-plugin\nCloning into '/home/runner/work/_temp/target'...\ncommit=0a2957852e2034d04eb01120fd7da6ed5307dc56\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "0a2957852e2034d04eb01120fd7da6ed5307dc56",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136569607",
+  "finished_at": "2026-08-07T01:00:14Z"
+}

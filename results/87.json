@@ -1,0 +1,24 @@
+{
+  "test_id": "87",
+  "full_name": "gabime/spdlog",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone gabime/spdlog\nCloning into '/home/runner/work/_temp/target'...\ncommit=989d28dd768adef702538634857942db24e1058a\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "989d28dd768adef702538634857942db24e1058a",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136568890",
+  "finished_at": "2026-08-07T01:00:18Z"
+}

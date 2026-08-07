@@ -1,0 +1,24 @@
+{
+  "test_id": "78",
+  "full_name": "denoland/deno",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 4
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone denoland/deno\nCloning into '/home/runner/work/_temp/target'...\ncommit=903d6702048f895253bf16065c37a6438aff7a01\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "903d6702048f895253bf16065c37a6438aff7a01",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136567848",
+  "finished_at": "2026-08-07T01:00:16Z"
+}

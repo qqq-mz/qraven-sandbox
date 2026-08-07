@@ -1,0 +1,29 @@
+{
+  "test_id": "92",
+  "full_name": "firecrawl/anydoc",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 4
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone firecrawl/anydoc\nCloning into '/home/runner/work/_temp/target'...\ncommit=4a45addbd607e8b59f0c263bca26aab228e10370\n==> strategy readme-cmds\n\nadded 2 packages in 2s",
+  "commit_sha": "4a45addbd607e8b59f0c263bca26aab228e10370",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136570720",
+  "finished_at": "2026-08-07T01:00:20Z"
+}

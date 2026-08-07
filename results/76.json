@@ -1,0 +1,29 @@
+{
+  "test_id": "76",
+  "full_name": "Significant-Gravitas/AutoGPT",
+  "strategy_used": "readme-cmds",
+  "status": "success",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 3
+    },
+    {
+      "name": "readme_extract",
+      "ok": true,
+      "seconds": 0
+    },
+    {
+      "name": "readme_exec",
+      "ok": true,
+      "seconds": 341
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone Significant-Gravitas/AutoGPT\nCloning into '/home/runner/work/_temp/target'...\ncommit=ce6ab7b074a625ce591c1f41ef17276c8093087d\n==> strategy readme-cmds\n\u001b[0;34m\n       d8888          888             .d8888b.  8888888b. 88888888888 \n      d88888          888            d88P  Y88b 888   Y88b    888     \n     d88P888          888            888    888 888    888    888     \n    d88P 888 888  888 888888 .d88b.  888        888   d88P    888     \n   d88P  888 888  888 888   d88\"\"88b 888  88888 8888888P\"     888     \n  d88P   888 888  888 888   888  888 888    888 888           888     \n d8888888888 Y88b 888 Y88b. Y88..88P Y88b  d88P 888           888     \nd88P     888  \"Y88888  \"Y888 \"Y88P\"   \"Y8888P88 888           888     \n\u001b[0m\n\u001b[0;32mAutoGPT Setup Script\u001b[0m\n\u001b[0;32m-------------------\u001b[0m\n\u001b[0;34mChecking prerequisites...\u001b[0m\n\u001b[0;32m✓ Git is installed\u001b[0m\n\u001b[0;32m✓ Docker is installed\u001b[0m\n\u001b[0;32mAll prerequisites installed!\u001b[0m\n\u001b[0;32mUsing existing AutoGPT repository.\u001b[0m\n\u001b[0;34mStarting AutoGPT services with Docker Compose...\u001b[0m\n\u001b[1;33mThis may take a few minutes on first run...\u001b[0m\n\n\u001b[0;32m✓ Services started successfully!\u001b[0m\n\n\u001b[0;32m=============================\u001b[0m\n\u001b[0;32m     Setup Complete!\u001b[0m\n\u001b[0;32m=============================\u001b[0m\n\n\u001b[0;34m🚀 Access AutoGPT at: http://localhost:3000\u001b[0m\n\u001b[0;34m📡 API available at: http://localhost:8000\u001b[0m\n\n\u001b[1;33mTo stop services: docker compose down\u001b[0m\n\u001b[1;33mTo view logs: docker compose logs -f\u001b[0m\n\n\u001b[1;33mAll commands should be run in: /home/runner/work/_temp/target/autogpt_platform\u001b[0m",
+  "commit_sha": "ce6ab7b074a625ce591c1f41ef17276c8093087d",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136566971",
+  "finished_at": "2026-08-07T01:05:56Z"
+}

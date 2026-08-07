@@ -1,0 +1,24 @@
+{
+  "test_id": "77",
+  "full_name": "vercel/next.js",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 27
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone vercel/next.js\nCloning into '/home/runner/work/_temp/target'...\nUpdating files:  62% (19574/31075)\nUpdating files:  63% (19578/31075)\nUpdating files:  64% (19888/31075)\nUpdating files:  65% (20199/31075)\nUpdating files:  66% (20510/31075)\nUpdating files:  67% (20821/31075)\nUpdating files:  68% (21131/31075)\nUpdating files:  69% (21442/31075)\nUpdating files:  70% (21753/31075)\nUpdating files:  71% (22064/31075)\nUpdating files:  72% (22374/31075)\nUpdating files:  73% (22685/31075)\nUpdating files:  74% (22996/31075)\nUpdating files:  75% (23307/31075)\nUpdating files:  76% (23617/31075)\nUpdating files:  77% (23928/31075)\nUpdating files:  78% (24239/31075)\nUpdating files:  79% (24550/31075)\nUpdating files:  80% (24860/31075)\nUpdating files:  81% (25171/31075)\nUpdating files:  82% (25482/31075)\nUpdating files:  83% (25793/31075)\nUpdating files:  84% (26103/31075)\nUpdating files:  85% (26414/31075)\nUpdating files:  86% (26725/31075)\nUpdating files:  87% (27036/31075)\nUpdating files:  88% (27346/31075)\nUpdating files:  89% (27657/31075)\nUpdating files:  90% (27968/31075)\nUpdating files:  91% (28279/31075)\nUpdating files:  92% (28589/31075)\nUpdating files:  93% (28900/31075)\nUpdating files:  94% (29211/31075)\nUpdating files:  95% (29522/31075)\nUpdating files:  96% (29832/31075)\nUpdating files:  97% (30143/31075)\nUpdating files:  98% (30454/31075)\nUpdating files:  99% (30765/31075)\nUpdating files: 100% (31075/31075)\nUpdating files: 100% (31075/31075), done.\ncommit=b3bc5cd2385ad69a0a7718e9ea105ce5dbfaca85\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "b3bc5cd2385ad69a0a7718e9ea105ce5dbfaca85",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136567308",
+  "finished_at": "2026-08-07T01:00:39Z"
+}

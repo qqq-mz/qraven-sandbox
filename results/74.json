@@ -1,0 +1,24 @@
+{
+  "test_id": "74",
+  "full_name": "obra/superpowers",
+  "strategy_used": "readme-cmds",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "clone",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "readme_extract",
+      "ok": false,
+      "seconds": 0
+    }
+  ],
+  "peak_mem_mb": null,
+  "image_size_mb": null,
+  "error_tail": "==> clone obra/superpowers\nCloning into '/home/runner/work/_temp/target'...\ncommit=44c9b2d6e889982ac18c27d05a19fefe335194e1\n==> strategy readme-cmds\nno substantive install commands extracted",
+  "commit_sha": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
+  "run_url": "https://github.com/qqq-mz/qraven-sandbox/actions/runs/31136566965",
+  "finished_at": "2026-08-07T01:00:13Z"
+}
